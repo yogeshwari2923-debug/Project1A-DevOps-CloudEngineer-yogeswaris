@@ -1,1 +1,26 @@
 
+name: CI Pipeline
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build
+        run: echo "Building..."
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test
+        run: echo "Testing..."
+
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Security Scan
+        run: echo "Scanning..."
