@@ -1,10 +1,19 @@
 
-# Deployment Runbook
+# Observability
 
-## Steps
+## Tools
 
-1. verify build
-2. approve release
-3. deploy
-4. monitor
-5. validate
+* Prometheus
+* Grafana
+
+## Metrics
+
+* Deployment frequency
+* Lead time
+* Failure rate
+* MTTR
+
+## Alerts
+
+* error rate
+* latency
